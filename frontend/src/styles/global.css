@@ -1,178 +1,247 @@
 /* Reset básico para garantir que não haja margens indesejadas */
 * {
-    margin: 0;         /* Remove a margem padrão que o navegador coloca nos elementos */
-    padding: 0;        /* Remove o preenchimento interno padrão */
-    box-sizing: border-box; /* Garante que o padding e a borda não aumentem o tamanho total do elemento */
+    margin: 0;
+    /* Remove a margem padrão que o navegador coloca nos elementos */
+    padding: 0;
+    /* Remove o preenchimento interno padrão */
+    box-sizing: border-box;
+    /* Garante que o padding e a borda não aumentem o tamanho total do elemento */
 }
 
 body {
-    font-family: Arial, sans-serif; /* Define a fonte padrão caso não encontre as outras */
-    background-color: #F0F2F5;     /* Define uma cor de fundo cinza bem claro para a página */
+    font-family: Arial, sans-serif;
+    /* Define a fonte padrão caso não encontre as outras */
+    background-color: #F0F2F5;
+    /* Define uma cor de fundo cinza bem claro para a página */
 }
 
 /*---------------------------------------------------HEADER--------------------------------------------------------------------*/
 .header {
-    background-color: #1a1a2e; /* Aplica a cor azul bem escura de fundo (igual à imagem) */
-    color: #ffffff;            /* Define a cor padrão dos textos internos como branco */
-    padding: 8px 13px;        /* Cria um espaçamento interno: 15px em cima/baixo e 20px nas laterais */
-    display: flex;             /* Ativa o Flexbox para podermos alinhar o container interno */
-    justify-content: center;   /* Centraliza o container de conteúdo no meio da tela */
+    background-color: #1a1a2e;
+    /* Aplica a cor azul bem escura de fundo (igual à imagem) */
+    color: #ffffff;
+    /* Define a cor padrão dos textos internos como branco */
+    padding: 8px 13px;
+    /* Cria um espaçamento interno: 15px em cima/baixo e 20px nas laterais */
+    display: flex;
+    /* Ativa o Flexbox para podermos alinhar o container interno */
+    justify-content: center;
+    /* Centraliza o container de conteúdo no meio da tela */
 }
 
 .header__container {
-    max-width: 1200px;         /* Limita a largura máxima do conteúdo para não espalhar demais em telas gigantes */
-    width: 100%;               /* Garante que ele ocupe até 100% da tela se ela for menor que 1200px */
-    display: flex;             /* Ativa o Flexbox para colocar os itens (logo, busca, ícones) um ao lado do outro */
-    align-items: center;       /* Alinha todos os itens verticalmente no centro da barra */
-    gap: 20px;                 /* Cria um espaço automático de 20px entre cada bloco de elemento */
+    max-width: 1200px;
+    /* Limita a largura máxima do conteúdo para não espalhar demais em telas gigantes */
+    width: 100%;
+    /* Garante que ele ocupe até 100% da tela se ela for menor que 1200px */
+    display: flex;
+    /* Ativa o Flexbox para colocar os itens (logo, busca, ícones) um ao lado do outro */
+    align-items: center;
+    /* Alinha todos os itens verticalmente no centro da barra */
+    gap: 20px;
+    /* Cria um espaço automático de 20px entre cada bloco de elemento */
 }
 
 /* Logo */
 .header__link-logo {
-    text-decoration: none;     /* Remove o sublinhado padrão que todo link tem */
-    font-size: 1.3rem;         /* Define o tamanho da fonte da logo */
-    font-weight: 800;          /* Deixa a fonte em negrito bem forte (Extra Bold) */
-    cursor: pointer;           /* Faz o ponteiro do mouse virar a "mãozinha" de clique */
+    text-decoration: none;
+    /* Remove o sublinhado padrão que todo link tem */
+    font-size: 1.3rem;
+    /* Define o tamanho da fonte da logo */
+    font-weight: 800;
+    /* Deixa a fonte em negrito bem forte (Extra Bold) */
+    cursor: pointer;
+    /* Faz o ponteiro do mouse virar a "mãozinha" de clique */
 }
 
 .header__logo-nexo {
-    color: #3b82f6; /* Azul Nexo */
+    color: #3b82f6;
+    /* Azul Nexo */
 }
 
 .header__logo-market {
-    color: #facc15; /* Amarelo Market */
+    color: #facc15;
+    /* Amarelo Market */
 }
 
 /* Localização */
 .header__location {
-    display: flex;             /* Habilita o Flexbox */
-    align-items: center;       /* Centraliza o ícone verticalmente com o texto */
-    gap: 8px;                  /* Espaço entre o ícone e o bloco de texto */
+    display: flex;
+    /* Habilita o Flexbox */
+    align-items: center;
+    /* Centraliza o ícone verticalmente com o texto */
+    gap: 8px;
+    /* Espaço entre o ícone e o bloco de texto */
     cursor: pointer;
     color: #ccc;
     font-size: 0.7rem;
-    width: fit-content;        /* Ajusta a largura ao conteúdo */
+    width: fit-content;
+    /* Ajusta a largura ao conteúdo */
 }
 
-.fa-solid{
-   font-size: 0.8rem;
+.fa-solid {
+    font-size: 0.8rem;
 }
 
 /* Barra de busca */
 .header__search-container {
-    display: flex;             /* Faz o input e o botão ficarem colados lado a lado */
-    flex: 1;                   /* O TRUQUE: Faz esse bloco crescer e ocupar todo o espaço do meio da tela */
+    display: flex;
+    /* Faz o input e o botão ficarem colados lado a lado */
+    flex: 1;
+    /* O TRUQUE: Faz esse bloco crescer e ocupar todo o espaço do meio da tela */
 }
 
 .header__search-input {
-    flex: 1;                   /* Faz o campo de digitação esticar o máximo possível dentro do container dele */
-    padding: 10px;             /* Dá um espaço interno para o texto digitado não colar nas bordas */
-    border: none;              /* Remove a borda padrão feia do navegador */
-    border-radius: 4px 0 0 4px; /* Arredonda apenas os cantos da esquerda (superior e inferior) */
-    outline: none;             /* Remove aquela linha preta/azul que aparece quando clicamos para digitar */
+    flex: 1;
+    /* Faz o campo de digitação esticar o máximo possível dentro do container dele */
+    padding: 10px;
+    /* Dá um espaço interno para o texto digitado não colar nas bordas */
+    border: none;
+    /* Remove a borda padrão feia do navegador */
+    border-radius: 4px 0 0 4px;
+    /* Arredonda apenas os cantos da esquerda (superior e inferior) */
+    outline: none;
+    /* Remove aquela linha preta/azul que aparece quando clicamos para digitar */
 }
 
 .header__search-button {
-    padding: 10px 20px;         /* Espaço interno: 10px cima/baixo e 20px nas laterais para dar tamanho ao botão */
-    background-color: #3b82f6; /* Define a cor de fundo azul do botão */
-    border: none;              /* Remove a borda padrão do botão */
-    color: white;              /* Define a cor do texto "Buscar" como branca */
-    cursor: pointer;           /* Transforma o mouse em "mãozinha" ao passar pelo botão */
-    border-radius: 0 4px 4px 0; /* Arredonda apenas os cantos da direita, encaixando perfeitamente no input */
-    font-weight: bold;         /* Deixa o texto "Buscar" em negrito */
+    padding: 10px 20px;
+    /* Espaço interno: 10px cima/baixo e 20px nas laterais para dar tamanho ao botão */
+    background-color: #3b82f6;
+    /* Define a cor de fundo azul do botão */
+    border: none;
+    /* Remove a borda padrão do botão */
+    color: white;
+    /* Define a cor do texto "Buscar" como branca */
+    cursor: pointer;
+    /* Transforma o mouse em "mãozinha" ao passar pelo botão */
+    border-radius: 0 4px 4px 0;
+    /* Arredonda apenas os cantos da direita, encaixando perfeitamente no input */
+    font-weight: bold;
+    /* Deixa o texto "Buscar" em negrito */
 }
 
 /* Ícones e Usuário */
-.header__user, 
-.header__notification, 
+.header__user,
+.header__notification,
 .header__favorite {
-    display: flex;             /* Alinha os ícones e os textos (se houverem) em linha */
-    align-items: center;       /* Centraliza tudo verticalmente */
-    gap: 5px;                  /* Dá um pequeno espaço de 5px entre o ícone e o texto ao lado */
-    cursor: pointer;           /* Indica que esses elementos são clicáveis */
+    display: flex;
+    /* Alinha os ícones e os textos (se houverem) em linha */
+    align-items: center;
+    /* Centraliza tudo verticalmente */
+    gap: 5px;
+    /* Dá um pequeno espaço de 5px entre o ícone e o texto ao lado */
+    cursor: pointer;
+    /* Indica que esses elementos são clicáveis */
 }
 
 /* Ajustes finos */
 i {
-    font-size: 1.2rem;         /* Aumenta ligeiramente o tamanho dos ícones do Font Awesome */
+    font-size: 1.2rem;
+    /* Aumenta ligeiramente o tamanho dos ícones do Font Awesome */
 }
 
 /*---------------------------------------------------CATEGORIAS--------------------------------------------------------------------*/
 
 /* Barra principal (fundo azul que vai de ponta a ponta na tela) */
 .categorias {
-    background-color: #2563eb; /* O azul vivo da imagem */
+    background-color: #2563eb;
+    /* O azul vivo da imagem */
     width: 100%;
     display: flex;
-    justify-content: center;   /* Centraliza o container interno na tela */
+    justify-content: center;
+    /* Centraliza o container interno na tela */
 }
 
 /* Container que segura o conteúdo e limita a largura máxima */
 .categorias__container {
-    max-width: 1200px;         /* Mantém o alinhamento com o restante do seu site */
+    max-width: 1200px;
+    /* Mantém o alinhamento com o restante do seu site */
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Empurra os links para a esquerda/centro e o botão para a direita */
-    align-items: center;       /* Alinha verticalmente os links e o botão */
-    padding: 0 20px;           /* Evita que o conteúdo cole na parede em telas menores */
-    height: 30px;              /* Define uma altura fixa para a barra */
+    justify-content: space-between;
+    /* Empurra os links para a esquerda/centro e o botão para a direita */
+    align-items: center;
+    /* Alinha verticalmente os links e o botão */
+    padding: 0 20px;
+    /* Evita que o conteúdo cole na parede em telas menores */
+    height: 30px;
+    /* Define uma altura fixa para a barra */
 }
 
 /* Caixa que guarda as opções de links */
 .categorias__opcoes {
     display: flex;
     align-items: center;
-    height: 100%; /* Ocupa toda a altura da barra para alinhar o hover */
+    height: 100%;
+    /* Ocupa toda a altura da barra para alinhar o hover */
 }
 
 /* Estilização padrão das tags de link */
 .categorias__opcoes a {
-    text-decoration: none;     /* Remove o sublinhado */
-    color: #ffffff;            /* Cor branca */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: #ffffff;
+    /* Cor branca */
     font-size: 0.95rem;
     font-weight: 500;
-    
+
     /* Cria a área interna que vai receber a cor de fundo no hover */
-    padding: 8px 16px;         
-    border-radius: 6px;        /* Arredonda os cantos do fundo, como na imagem */
-    
+    padding: 8px 16px;
+    border-radius: 6px;
+    /* Arredonda os cantos do fundo, como na imagem */
+
     /* Transição suave para a cor de fundo e opacidade ao passar o mouse */
-    transition: background-color 0.2s ease, opacity 0.2s ease; 
+    transition: background-color 0.2s ease, opacity 0.2s ease;
 }
 
 /* Efeito de Hover ajustado conforme a imagem */
 .categorias__opcoes a:hover {
-    background-color: rgba(255, 255, 255, 0.15); /* Cria esse tom de azul mais claro usando opacidade branca */
-    opacity: 0.9;                               /* Dá um leve destaque visual */
+    background-color: rgba(255, 255, 255, 0.15);
+    /* Cria esse tom de azul mais claro usando opacidade branca */
+    opacity: 0.9;
+    /* Dá um leve destaque visual */
 }
 
 /* O "Botão" Amarelo (na verdade, estilizamos a div para envelopar o ícone + button) */
 .categorias__button {
-    background-color: #fffa54; /* Amarelo vivo da imagem */
+    background-color: #fffa54;
+    /* Amarelo vivo da imagem */
     display: flex;
-    align-items: center;       /* Centraliza o raio e o texto verticalmente */
-    gap: 6px;                  /* Espaço entre o raio e o texto "Ofertas do dia" */
-    padding: 8px 16px;         /* Espaçamento interno para dar corpo ao botão */
-    border-radius: 6px;        /* Cantos levemente arredondados */
+    align-items: center;
+    /* Centraliza o raio e o texto verticalmente */
+    gap: 6px;
+    /* Espaço entre o raio e o texto "Ofertas do dia" */
+    padding: 8px 16px;
+    /* Espaçamento interno para dar corpo ao botão */
+    border-radius: 6px;
+    /* Cantos levemente arredondados */
     cursor: pointer;
-    height: 30px;              /* Ajusta a altura para caber harmonicamente na barra */
+    height: 30px;
+    /* Ajusta a altura para caber harmonicamente na barra */
 }
 
 /* Estilização do ícone de raio dentro do botão amarelo */
 .categorias__button i {
-    color: #ff4747 !important; /* Força o raio a ficar vermelho/laranja como na imagem */
+    color: #ff4747 !important;
+    /* Força o raio a ficar vermelho/laranja como na imagem */
     font-size: 0.95rem;
 }
 
 /* Estilização do <button> real para sumir com o padrão do navegador */
 .categorias__button button {
-    background: transparent;   /* Remove o fundo cinza padrão */
-    border: none;              /* Remove as bordas padrão */
-    color: #1a1a2e;            /* Texto escuro para contrastar com o amarelo */
-    font-weight: bold;         /* Texto em negrito */
+    background: transparent;
+    /* Remove o fundo cinza padrão */
+    border: none;
+    /* Remove as bordas padrão */
+    color: #1a1a2e;
+    /* Texto escuro para contrastar com o amarelo */
+    font-weight: bold;
+    /* Texto em negrito */
     font-size: 0.9rem;
     cursor: pointer;
-    font-family: inherit;      /* Herda a fonte Arial do body */
+    font-family: inherit;
+    /* Herda a fonte Arial do body */
     padding: 0;
 }
 
@@ -182,16 +251,18 @@ i {
 .hero-banner {
     position: relative;
     width: 100%;
-    height: 300px; /* Ajuste conforme necessário */
-    
+    height: 300px;
+    /* Ajuste conforme necessário */
+
     /* O truque do degradê roxo sobre a imagem */
-    background: linear-gradient(rgba(100, 50, 150, 0.7), rgba(100, 50, 150, 0.7)), 
-                url('sua-imagem-aqui.jpg');
+    background: linear-gradient(rgba(100, 50, 150, 0.7), rgba(100, 50, 150, 0.7)),
+        url('sua-imagem-aqui.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
-    padding-left: 10%; /* Posiciona o texto à esquerda */
+    padding-left: 10%;
+    /* Posiciona o texto à esquerda */
     color: white;
 }
 
@@ -200,7 +271,8 @@ i {
 }
 
 .hero-banner__tag {
-    background-color: #facc15; /* Amarelo igual ao do site */
+    background-color: #facc15;
+    /* Amarelo igual ao do site */
     color: #1a1a2e;
     padding: 4px 10px;
     font-weight: bold;
@@ -222,106 +294,82 @@ i {
 .hero-banner__arrow {
     position: absolute;
     top: 50%;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     border: none;
     color: white;
     padding: 15px;
     cursor: pointer;
 }
-.hero-banner__arrow--prev { left: 20px; }
-.hero-banner__arrow--next { right: 20px; }
+
+.hero-banner__arrow--prev {
+    left: 20px;
+}
+
+.hero-banner__arrow--next {
+    right: 20px;
+}
 
 /*---------------------------------------------------CARD-CATEGORIAS--------------------------------------------------------------------*/
 
-/* Container que define o fundo cinza claro geral abaixo do banner */
 .card-catogorias {
-    background-color: #f5f7fa; 
-    width: 100%;
+    background-color: #F0F2F5;
     display: flex;
     justify-content: center;
-    padding-bottom: 40px;   
-       
 }
 
-/* O container que segura os cards e faz a sobreposição */
 .card-categorias__container {
-    max-width: 1200px;         /* Limite máximo alinhado com o header do seu site */
-    width: 100%;
+    background-color: #F0F2F5;
+    width: 1200px;
+    max-width: 100%;
     display: flex;
-    
-    /* MODIFICAÇÕES CRUCIAIS AQUI: */
-    justify-content: space-between; /* Distribui os cards uniformemente de ponta a ponta */
-    flex-wrap: nowrap;              /* PROÍBE os cards de quebrarem de linha */
-    
-    margin-top: -45px;         /* Ajuste a altura da sobreposição conforme seu banner */
-    position: relative;        
-    z-index: 10;               
-    padding: 0 20px;           /* Margem de segurança nas pontas da tela */
-    box-sizing: border-box;
-    top: 70px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
 }
 
-/* O Card Retangular Branco */
 .card-categorias__card {
-    background-color: #ffffff;
-    
-    /* AJUSTE DE LARGURA INTELIGENTE: */
-    /* São 8 cards. Dividir 100% por 8 dá 12.5%. Deduzimos um pequeno valor para os espaços */
-    width: calc(12.5% - 12px); 
-    min-width: 110px;          /* Impede que o card esmague demais em telas muito pequenas */
-    
-    height: 95px;              /* Mantém a altura retangular da foto original */
-    border-radius: 12px;       
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); 
+    background-color: #FFFFFF;
     display: flex;
-    align-items: center;
+    position: relative;
     justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 85px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    text-align: center;
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-sizing: border-box;
+    bottom: 0px;
+    transition: all 0.2s;
 }
 
 .card-categorias__card:hover {
-    transform: translateY(-3px); 
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    background-color: white;
+    bottom: 3px;
+    box-shadow: 0px 5px 10px -8px rgba(0, 0, 0, 0.5);
 }
 
-/* Alinhamento interno vertical */
-.card-categorias__card-container {
+
+.card-categorias__card-icon {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 8px;                  
-    width: 100%;
+    align-items: center;
 }
 
-/* A bolha de fundo do ícone */
 .card-categorias__card-icon-container {
-    background-color: #eff6ff; 
-    width: 42px;               
-    height: 42px;
-    border-radius: 50%;
+    background-color: #F0F2F5;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 50%;
 }
 
-/* Ajuste do ícone */
-.card-categorias__card-icon-container i {
-    font-size: 1.1rem;         
-}
 
 /* Estilização exata do texto da categoria */
 .card-categorias__descricao-card span {
-    color: #1e293b;            
-    font-size: 0.75rem;        /* Fonte ligeiramente menor para garantir que o texto não quebre */
-    font-weight: 700;          
-    text-align: center;
-    font-family: 'Poppins', Arial, sans-serif;
-    display: block;
-    width: 100%;
-    white-space: nowrap;       /* Impede que nomes como "Casa & Jardim" quebrem em duas linhas */
-    overflow: hidden;
-    text-overflow: ellipsis;   /* Se o espaço sumir, ele adiciona "..." elegantemente */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top: 8px;
 }
