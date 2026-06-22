@@ -27,6 +27,7 @@ body {
     /* Ativa o Flexbox para podermos alinhar o container interno */
     justify-content: center;
     /* Centraliza o container de conteúdo no meio da tela */
+
 }
 
 .header__container {
@@ -40,6 +41,7 @@ body {
     /* Alinha todos os itens verticalmente no centro da barra */
     gap: 20px;
     /* Cria um espaço automático de 20px entre cada bloco de elemento */
+
 }
 
 /* Logo */
@@ -392,6 +394,7 @@ i {
     justify-content: start;
     align-items: center;
     gap: 20px;
+    padding: 10px;
 }
 
 .titulo__container i {
@@ -514,9 +517,16 @@ i {
     height: 30px;
     border-radius: 5px;
     font-weight: bold;
+    cursor: pointer;
 }
 
-/*---------------------------------------------------inf-pagamento--------------------------------------------------------------------*/
+.card-produto__botao-carrinho button:hover {
+    background-color: #6ba5fc;
+}
+
+
+
+/*==================================inf-pagamento=================================*/
 .inf-pagamento {
     background-color: #F0F2F5;
     display: flex;
@@ -530,9 +540,9 @@ i {
     max-width: 100%;
     width: 1200px;
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
     gap: 20px;
 
 
@@ -597,11 +607,6 @@ i {
     width: 370px;
     border-radius: 10px;
         color: white;
-
-
-
-
-
 }
 
 .inf-pagamento__frete div {
@@ -630,4 +635,235 @@ i {
     border-radius: 5px;
     margin: 30px;
     cursor: pointer;
+}
+.verMais button:hover {
+    background-color: #6ba5fc;
+    
+}
+
+/*====================email-oferta===================*/
+.email-oferta {
+background-color: #F0F2F5;
+max-width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 0 80px 0;
+
+}
+
+.email-oferta__container{
+background-color: #18213B;
+max-width: 100%;
+width: 1200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+padding: 30px;
+border-radius: 15px;
+color: white;
+}
+
+
+
+.email-oferta__container h1{
+    font-size: 20px;
+    font-weight:bold;
+font-family: sans-serif;
+
+}
+
+.email-oferta__container p{
+        font-size: 14px;
+        color: rgb(206, 206, 206);
+
+
+
+}
+
+.email-oferta__search-container{
+
+
+}
+
+.email-oferta__search-container input {
+    padding: 10px;
+    width:300px;
+    border-radius: 10px;
+
+    
+}
+
+.email-oferta__search-container button{
+    background-color: #FFF159;
+padding: 10px;
+width: 150px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+/*====================footer-beneficios===================*/
+
+.footer-beneficios{
+background-color: #1A1A2E;
+max-width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.footer-beneficios__container{
+    background-color: #1A1A2E;
+    max-width: 100%;
+    width: 1200px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 0;
+        gap: 120px;
+    
+
+
+}
+
+.footer-beneficios__item{
+    background-color: #1A1A2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: small;
+    color: #FFFBFF;
+
+}
+.footer-beneficios__item p{
+    
+    color: #999896;
+
+}
+.footer-beneficios__item i{
+    background-color: #1E2A4C;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #3483FA;    
+
+}
+/*====================footer-links===================*/
+
+.footer-links{
+background-color: #101828;
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 100%;
+
+}
+
+.footer-links__container{
+background-color: #101828;
+display: flex;
+justify-content: start;
+align-items: start;
+max-width: 100%;
+width: 1200px;
+gap: 20px;
+padding: 40px 0;
+}
+
+.footer-links__container h5{
+    color: white;
+}
+.footer-links__container h3{
+    color: white;
+}
+
+.footer-links__item{
+background-color: #101828;
+display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: start;
+width: 250px;
+gap: 20px;
+
+}
+.footer-links__icones-redes{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links__icones-redes i{
+background-color: #364153;
+padding: 8px;
+border-radius: 50%;
+font-size: 0.8rem;
+cursor: pointer;
+
+}
+
+.footer-links__item span{
+    
+font-size: 0.7rem;
+color: #6A7282;
+line-height: 1.3rem;;
+}
+
+.footer-links__item ul li{
+margin-bottom: 15px;
+gap: 80px;
+text-decoration: none;
+font-size: 0.7rem;
+list-style-type: none;
+cursor: pointer;
+color: #6A7282;
+
+}
+.footer-links__item ul li:hover{
+color: #ccc;
+
+}
+
+/*====================footer-direitos===================*/
+
+
+.footer-direitos {
+    background-color: #0e0f1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+
+
+}
+
+.footer-direitos__container{
+    background-color: #0e0f1c;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 1200px;
+    padding: 15px;
+    font-size: 0.8rem;
+        color: #364153;  
+        
+
+
+}
+
+.footer-direitos__container span{
+    background-color: gray;
+    padding: 1px 8px 1px 8px;
+    border-radius: 3px;
+}
+
+.footer-direitos__forma-pagamento{
+    display: flex;
+    gap: 15px;
 }
