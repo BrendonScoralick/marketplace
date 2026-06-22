@@ -27,6 +27,11 @@ body {
     /* Ativa o Flexbox para podermos alinhar o container interno */
     justify-content: center;
     /* Centraliza o container de conteúdo no meio da tela */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 
 }
 
@@ -41,6 +46,7 @@ body {
     /* Alinha todos os itens verticalmente no centro da barra */
     gap: 20px;
     /* Cria um espaço automático de 20px entre cada bloco de elemento */
+    
 
 }
 
@@ -153,6 +159,12 @@ i {
     display: flex;
     justify-content: center;
     /* Centraliza o container interno na tela */
+    position: fixed;
+    top: 53px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
 }
 
 /* Container que segura o conteúdo e limita a largura máxima */
